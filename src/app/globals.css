@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --primary:rgb(52, 93, 104);
+  --secondary:rgb(10, 39, 79);
+  --terciary:rgb(46, 48, 148);
+  --quaternary:rgb(203, 4, 27);
+  --fourth:rgb(0, 0, 0);
+  --fifth:rgb(255, 255, 255);
+}
+
 html,
 body,
 div,
@@ -130,6 +139,7 @@ table {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  background: var(--secondary) ;
   .card {
 	width: 280px;
 	border: 1px solid rgb(52, 93, 104);
