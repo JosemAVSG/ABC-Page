@@ -6,14 +6,20 @@ $quaternary:rgb(203, 4, 27);
 $fourth:rgb(0, 0, 0);
 $fifth:rgb(255, 255, 255);
 
-
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
 
 .container {
   background-image: url("../../../public/hero1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   width: 700px;
   gap: 20px;
   border-left: 10px solid $secondary;

@@ -11,8 +11,8 @@ const Home = () => {
               src={
                 "https://i.postimg.cc/VNYyskFV/technician-antistatic-gloves-using-screwdriver-disassemble-borken-mobile-phone-going-repair-motherbo.jpg"
               }
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               alt="Hero-Image"
             />
             <div className="p-4">
