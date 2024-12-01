@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Bebas_Neue } from "next/font/google";
+import {  Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/ui/hero";
-const bebas = Bebas_Neue({ subsets: ["latin"], weight: "400" });
+import Hero from "@/components/ui/Hero";
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "ABC-Accesorios",
@@ -17,8 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bebas.className} antialiased `}>
-       <section className="flex flex-col h-screen   ">
+      <body className={`${roboto.className} antialiased `}>
+       <section className="flex flex-col h-screen ">
         <Navbar></Navbar>
         <Hero></Hero>
        </section>

@@ -3,38 +3,62 @@ import Image from "next/image";
 import logo from "../../public/logo.png";
 export default function Navbar() {
   return (
-    <nav className=" w-full flex justify-between py-2 sticky top-0 bg-white ">
-      <div className="flex mx-10">
-
-      <Image
-        src={logo}
-        width={80}
-        height={80}
-        alt="ABC-Accesorios"
-        priority={true}
-        
-      />
-
-
+    <nav className="sticky top-0 flex justify-between w-full py-2 bg-white ">
+      <div className="flex mx-20 mt-2">
+        <Image
+          src={logo}
+          width={85}
+          height={85}
+          alt="ABC-Accesorios"
+          priority={true}
+        />
       </div>
-      <ul className="flex text-xl space-x-4 m-2 mx-10 items-center gap-8 ">
-        <li>
-          <Link className="text-black hover:text-gray-300" href={"/"}>
-            Inicio
-          </Link>
-        </li>
-        <li>
-          <Link className="text-black hover:text-gray-300" href={"/telefonos"}>
-            Telefonos
-          </Link>
-        </li>
+      <div className="flex items-center">
+        <ul className="flex items-center gap-8 m-2 mx-10 space-x-4 text-xl font-bold ">
+          <li>
+            <Link className="text-black hover:text-sky-950" href={"/"}>
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-black hover:text-sky-950"
+              href={"/telefonos"}
+            >
+              Telefonos
+            </Link>
+          </li>
 
-        <li>
-          <Link className="text-black hover:text-gray-300" href={"/papeleria"}>
-            Papeleria
-          </Link>
-        </li>
-      </ul>
+          <li>
+            <Link
+              className="text-black hover:text-sky-950"
+              href={"/papeleria"}
+            >
+              Papeleria
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      <div className="flex items-center">
+        <ul className="flex gap-8 m-2 mx-10 space-x-4 text-xl">
+          <li>
+            <Link className="text-black hover:text-sky-950" href={"/login"}>
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link className="text-black hover:text-sky-950" href={"/registro"}>
+              Buscar
+            </Link>
+          </li>
+          <li>
+            <Link className="text-black hover:text-sky-950" href={"/carrito"}>
+              Carrito
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
